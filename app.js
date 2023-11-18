@@ -9,7 +9,6 @@ const RESTART_BTN_SELECTOR = '.restart__btn';
 const RESTART_SELECTOR = '.restart';
 const DATA_SELECTION_SELECTOR = '[data-selection]';
 
-let numberOfRounds = 1;
 let playerCounter = 0;
 let computerCounter = 0;
 
@@ -33,7 +32,7 @@ class RPS {
         const computerScore = document.querySelector(COMPUTER_SCORE_SELECTOR);
 
         if (this._isDraw(this._playerChoice, this._computerChoice)) {
-            result.textContent = 'is a Draw';
+            result.textContent = 'It`s a tie!';
         }
         else if (this._isWinner(this._playerChoice, this._computerChoice)) {
             result.textContent = 'You Win! ' + this._playerChoice + ' beats ' + this._computerChoice;
