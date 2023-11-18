@@ -31,7 +31,7 @@ class RPS {
         const playerScore = document.querySelector(PLAYER_SCORE_SELECTOR);
         const computerScore = document.querySelector(COMPUTER_SCORE_SELECTOR);
 
-        if (this._isDraw(this._playerChoice, this._computerChoice)) {
+        if (this._isTie(this._playerChoice, this._computerChoice)) {
             result.textContent = 'It`s a tie!';
         }
         else if (this._isWinner(this._playerChoice, this._computerChoice)) {
@@ -61,7 +61,7 @@ class RPS {
     }
 
     // private methods
-    _isDraw(playerSelection, computerSelection) {
+    _isTie(playerSelection, computerSelection) {
         return playerSelection === computerSelection;
     }
 
