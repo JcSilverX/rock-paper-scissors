@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script defer src="app.js"></script>
+    </head>
+    <body class="page">
+
+        <div class="page__app">
+
+            <header class="header">
+                <h1 class="logo logo--center">Rock Paper Scissors</h1>
+            </header>
+
+
+            <main class="main-content">
+
+                <div class="rps">
+                    <div class="rps__content">
+                        <div class="rps__header">
+                            <div class="screen">
+                                <span class="screen__text">Hello World</span>
+                            </div>
+                        </div>
+
+                        <div class="rps__body">
+                            <div class="scores">
+                                <div class="player">
+                                    <i class="bi bi-person-fill"></i>
+                                    <span class="player__score">0</span>
+                                </div>
+                                <dov class="pc">
+                                    <i class="bi bi-pc-display"></i>
+                                    <span class="pc__score">0</span>
+                                </dov>
+                            </div>
+                        </div>
+
+                        <div class="rps__footer">
+                            <div class="restart">
+                                <button type="button" class="restart__btn btn" style="width: 100%;">
+                                    PLAY AGAIN
+                                </button>
+                            </div>
+                            <ul class="list">
+                                <li class="list__item">
+                                    <button type="button" class="list__btn btn" data-selection="rock" style="width: 100%;">
+                                        ROCK
+                                    </button> 
+                                </li>
+                                <li class="list__item">
+                                    <button type="button" class="list__btn btn" data-selection="paper" style="width: 100%;">
+                                        PAPER
+                                    </button>
+                                </li>
+                                <li class="list__item">
+                                    <button type="button" class="list__btn btn" data-selection="scissors" style="width: 100%;">
+                                        SCISSORS
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+            <footer class="footer">
+                <div class="copyright">
+                    &copy;
+                    2023 Copyright
+                    <a href="#!">JcSilverX</a>
+                </div>
+            </footer>
+        </div>
+
+    </body>
+</html>

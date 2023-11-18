@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+
+.screen {
+    background: rgba(29, 30, 34, .5);
+    padding: 2rem;
+    font-size: 3.2rem;
+    border-radius: .6rem;
+    user-select: none;
+
+    display: grid;
+    place-items: center;
+}

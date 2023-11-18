@@ -1,0 +1,13 @@
+@use '../abstracts/' as *;
+
+.restart {
+    display: none;
+
+    &__btn {
+
+    }
+
+    &.show {
+        display: block;
+    }
+}

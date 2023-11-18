@@ -1,0 +1,35 @@
+@use '../abstracts/' as *;
+
+
+.scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 1.6rem;
+    font-size: 3.2rem;
+    font-family: inherit;
+    user-select: none;
+
+    & > * {
+        flex: 1;
+        padding: 1rem;
+        border: 1px solid rgba(29, 30, 34, 1);
+        border-radius: .6rem;
+    }
+
+    .player {
+        display: flex;
+
+        &__score {
+            margin: 0 auto;
+        }
+    }
+
+    .pc {
+        display: flex;
+
+        &__score {
+            margin: 0 auto;
+        }
+    }
+}

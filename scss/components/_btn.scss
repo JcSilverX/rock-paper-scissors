@@ -1,0 +1,22 @@
+@use '../abstracts/' as *;
+
+.btn {
+    --opacity: .7;
+
+    display: inline-block;
+    padding: 1.6rem 1.4rem;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: .6rem;
+    background: rgba(29, 30, 34, var(--opacity));
+    color: inherit;
+    transition: all .4s;
+
+    &:hover,
+    &:focus {
+        --opacity: 1;
+    }
+}

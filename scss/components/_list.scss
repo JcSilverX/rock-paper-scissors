@@ -1,0 +1,16 @@
+@use '../abstracts/' as *;
+
+
+.list {
+    display: flex;
+    gap: 1rem;
+
+
+    &__item {
+        flex: 1;
+    }
+
+    &__btn {
+        font-size: 2rem !important;
+    }
+}
